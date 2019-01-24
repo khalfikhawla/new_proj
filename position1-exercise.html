@@ -1,0 +1,88 @@
+<!doctype html >
+<html>
+<head>
+<meta charset ="utf-8">
+<title>kh</title>
+<style>
+body {
+background: url(images/outerspace_landscape.jpeg) no-repeat;
+    background-size: cover;
+}
+.box {
+  margin-top: 150px;
+  width: 600px;
+  height: 300px;
+  position: relative;
+  border: 10px dotted green;
+  margin-left: auto;
+  margin-right: auto;
+}
+.spacecat, .spacedog {
+  position: absolute;
+  width: 200px;
+}
+.spacecat {
+  top: -90px;
+  left: -90px;
+}
+
+.spacedog {
+  bottom: -120px;
+  right: -60px;
+}
+nav {
+  height: 60px;
+  background-color: grey;
+  position: fixed;
+  width: 100%;
+}
+nav .icon-img {
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid black;
+}
+nav a:hover {
+  color: black;
+}
+nav li::after {
+  content: "|";
+  margin-left: 5px;
+}
+nav li {
+  display: inline-block;
+}
+nav ul {
+  display: inline-block;
+  list-style: none;
+}
+main {
+  padding-top: 90px;
+  min-width: 1000px;
+}
+.container {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+</style>
+</head>
+<body>
+<nav class="container">
+    <img src="images/icon.png" class="icon-img">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="kh.html">display</a></li>
+      <li><a href="float-exercise.html">float</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="box">
+       <img src="images/spacecat.png" class='spacecat'>
+      <img src="images/spacedog.png" class='spacedog'>
+    </div>
+  </main>
+</body>
+</html>
